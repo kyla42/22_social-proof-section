@@ -50,7 +50,9 @@ p {
     }
 }
 
-.fx {
+
+// extend
+%fx {
     display: flex;
 
     &-jc-c {
@@ -75,7 +77,7 @@ p {
     }
 }
 
-.fxcol {
+%fxcol {
     display: flex;
     flex-direction: column;
 
