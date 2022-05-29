@@ -4,6 +4,7 @@
     position: relative;
     max-width: 100vw;
     min-height: 100vh;
+    display: flex;
     overflow: hidden;
 
     @include u.bp(md) {
@@ -49,6 +50,7 @@
 .container {
     width: 111rem;
     height: 59.7rem;
+    @extend .fxcol-jc-sb;
     margin: auto;
 
     @include u.bp(md) {
@@ -58,6 +60,7 @@
 
     &__upper {
         height: 26.6rem;
+        @extend .fx-ai-c;
         justify-content: space-between;
         transition: all .3s ease-in-out;
 
@@ -71,6 +74,7 @@
         &-left {
             width: 40%;
             margin-top: 1rem;
+            @extend .fxcol;
             row-gap: 3rem;
 
             @include u.bp(md) {
@@ -100,6 +104,7 @@
                 width: 54rem;
                 height: 20rem;
                 margin-top: 2rem;
+                @extend .fxcol-jc-sb;
 
                 @include u.bp(md) {
                     height: auto;
@@ -112,6 +117,7 @@
                     height: 5.6rem;
                     background-color: u.$c-LightGrayishMagenta;
                     border-radius: 0.8rem;
+                    @extend .fx-ai-c;
                     transition: all .3s ease-in-out;
 
                     @include u.bp(sm) {
@@ -126,6 +132,7 @@
                         width: 11.7rem;
                         height: 1.6rem;
                         margin: 0 3.2rem;
+                        @extend .fx-jc-sb;
 
                         span {
                             width: 1.7rem;
@@ -137,15 +144,18 @@
 
                     p {
                         color: u.$c-VeryDarkMagenta;
+                        display: flex;
                         justify-content: flex-start;
                     }
 
                     &-two {
-                        margin: 0 auto;   
+                        margin: 0 auto;
+                        @extend .fx-ai-c; 
                     }
 
                     &-three {
                         margin-left: 9.5rem;
+                        @extend .fx-ai-c;
                     }
 
                     &-one,
@@ -170,6 +180,7 @@
         }
         
         .cards {
+            display: flex;
             justify-content: space-between;
 
             @include u.bp(md) {
@@ -197,6 +208,7 @@
                 }
 
                 .profile {
+                    @extend .fx-ai-c;
                     
                     .avatar {
                         width: 4rem;
@@ -208,6 +220,7 @@
 
                     .name-area {
                         margin: 0.2rem 0 0 2.3rem;
+                        @extend .fxcol;
                         row-gap: 0.4rem;
 
                         .title {
@@ -218,6 +231,8 @@
                 }
 
                 &-one {
+                    @extend .fxcol-jc-sb;
+
                     .avatar {                       
                         background-image: url(../images/image-colton.jpg); 
                     }
@@ -225,6 +240,7 @@
 
                 &-two {
                     margin-top: 1.6rem;
+                    @extend .fxcol-jc-sb;
 
                     .avatar {
                         background-image: url(../images/image-irene.jpg);
@@ -233,6 +249,7 @@
 
                 &-three {
                     margin-top: 3.2rem;
+                    @extend .fxcol-jc-sb;
 
                     @include u.bp(md) {
                         margin-top: 1.6rem;
